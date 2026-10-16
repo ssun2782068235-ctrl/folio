@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0e11">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="FOLIO 记录银行存款、股票、房产、加密资产、养老金与负债。">
+<title>FOLIO</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2300e3b5'/%3E%3Cpath d='M8 22V10h3.2v12H8zm6.2 0V14H17.4v8h-3.2zm6.2 0v-5H23.6v5h-3.2z' fill='%2306231c'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+<div class="stage">
+  <div class="stage-copy" id="stage-note"></div>
+  <div class="phone" id="phone">
+    <div class="statusbar"><span id="clock">9:41</span></div>
+    <div class="island" aria-hidden="true"></div>
+    <header id="top"></header>
+    <main id="view"></main>
+    <nav id="tabs"></nav>
+    <div id="sheet"></div>
+    <div id="modal"></div>
+    <div id="toast" role="status"></div>
+  </div>
+</div>
+<input id="file" type="file" accept="application/json,.json" hidden>
+<script type="module" src="./js/app.js"></script>
+</body>
+</html>

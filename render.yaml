@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: folio
+    runtime: python
+    plan: free
+    region: singapore
+    buildCommand: "python3 -m compileall -q ."
+    startCommand: python3 server.py
+    healthCheckPath: /
